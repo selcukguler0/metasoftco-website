@@ -7,10 +7,10 @@ export default function Footer() {
                 <div className='text-center space-y-3'>
                     <p className='text-xl'>Bir proje fikriniz mi var?</p>
                     <h3 className='text-metasoftco-red text-5xl'>İletişime geçin</h3>
-                    <p className='text-xl'><a href='mailto:info@metasoftco.com' className='text-metasoftco-red'>info@metasoftco.com</a>{" "} adresine mail atın veya aşağıdaki formu doldurun.</p>
-                    <p className='text-lg'>Daha hızlı yardımamı ihtiyacınız var? Bizi arayın {" "}<a href='tel:+905342334051' className='text-metasoftco-red'>+90 534 233 40 51</a></p>
+                    <p className='text-lg md:text-xl'><a href='mailto:info@metasoftco.com' className='text-metasoftco-red'>info@metasoftco.com</a>{" "} adresine mail atın veya aşağıdaki formu doldurun.</p>
+                    <p className='text-md md:text-lg'>Daha hızlı yardımamı ihtiyacınız var? Bizi arayın {" "}<a href='tel:+905342334051' className='text-metasoftco-red'>+90 534 233 40 51</a></p>
                 </div>
-                <form action="" className='max-w-[700px] mx-auto mt-16'>
+                <form action="" className='w-full md:w-[700px] mx-auto mt-16'>
                     <div className='space-y-1'>
                         <label htmlFor="name">İsminiz*</label>
                         <input type="text" id="name" className='w-full border-2 bg-metasoftco-bg/80 border-gray-300 p-3' />
@@ -27,7 +27,7 @@ export default function Footer() {
                         <button className='rounded-full bg-metasoftco-red text-white mt-4 px-8 py-3 font-bold transition-all delay-100 hover:scale-110'>Gönder</button>
                     </div>
                 </form>
-                <div className='container flex justify-between'>
+                <div className='flex justify-between'>
                     <div></div>
                     <div className='grid grid-cols-4'>
                         

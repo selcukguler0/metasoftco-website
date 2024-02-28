@@ -25,7 +25,7 @@ export default function Home() {
       <main className="container mt-48">
         <div className="mb-12 md:mb-0 md:min-h-[60vh]">
           <div className="mt-12 md:ml-56 max-w-[800px]">
-            <h2 className="text-6xl sm:text-5xl md:text-7xl font-black">
+            <h2 className="text-5xl md:text-7xl font-black">
               İnovasyonla harmanlanmış etkinlik deneyimleri sunuyoruz.
             </h2>
             <TeklifAl />
@@ -33,7 +33,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-5 md:gap-12 mb-7 md:items-end">
-          <h2 className="text-5xl font-semibold md:flex-shrink-0">
+          <h2 className="text-4xl md:text-5xl font-semibold md:flex-shrink-0">
             <span className="text-2xl">Metasoftco</span> <br />
             Neler Yapıyoruz?
           </h2>
