@@ -3,6 +3,8 @@ import React from 'react'
 import { IoIosMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
 import { Metadata } from 'next';
+import { sendMail } from '@/app/actions';
+import Form from '@/components/Iletisim/Form';
 
 export const metadata: Metadata = {
     title: "MetasoftCo - İletişim",
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
     metadataBase: new URL("https://metasoftco.com"),
   };
 
-export default function Iletisim() {
+export default async function Iletisim() {
     return (
         <>
             <Header page="İletişim" />
@@ -32,19 +34,7 @@ export default function Iletisim() {
                         <a href="mailto:info@metasoftco.com"><IoIosMail className='inline-block no-underline mr-1' /> info@metasoftco.com</a>
                         <a href="tel:+905342334051"><FaPhone size={14} className='inline-block no-underline mr-1' /> +90 534 233 40 51</a>
                     </div>
-                    <form className='my-24'>
-                        <div>
-                            <label htmlFor="email">E-posta Adresiniz*</label>
-                            <input type="email" id="email" className='w-full border-2 bg-metasoftco-bg/80 text-black border-gray-300 p-3' />
-                        </div>
-                        <div className='mt-4'>
-                            <label htmlFor="message">Mesajınız*</label>
-                            <textarea id="message" className='w-full border-2 bg-metasoftco-bg/80 text-black resize-none border-gray-300 p-3' />
-                        </div>
-                        <div className='w-full text-center'>
-                            <button className='rounded-full bg-metasoftco-red text-white mt-4 px-8 py-3 font-bold transition-all delay-100 hover:scale-110'>Gönder</button>
-                        </div>
-                    </form>
+                    <Form />
                 </div>
                 <div className='bg-[url("/warehouse-8589487_1920.jpg")] w-full h-[50vh] bg-fixed'>
                     <div className='w-full h-full bg-black/50 relative'>

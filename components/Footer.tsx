@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React from 'react'
 import { IconType } from 'react-icons';
 import { FaXTwitter, FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa6";
+import Form from './Footer/Form';
 
 export default function Footer() {
     const socialIcons = [
@@ -32,23 +33,7 @@ export default function Footer() {
                     <p className='text-lg md:text-xl'><a href='mailto:info@metasoftco.com' className='text-metasoftco-red'>info@metasoftco.com</a>{" "} adresine mail atın veya aşağıdaki formu doldurun.</p>
                     <p className='text-md md:text-lg'>Daha hızlı yardımamı ihtiyacınız var? <br className='block md:hidden' /> Bizi arayın {" "}<a href='tel:+905342334051' className='text-metasoftco-red'>+90 534 233 40 51</a></p>
                 </div>
-                <form action="" className='w-full md:w-[700px] mx-auto mt-16'>
-                    <div className='space-y-1'>
-                        <label htmlFor="name">İsminiz*</label>
-                        <input type="text" id="name" className='w-full border-2 bg-metasoftco-bg/90 hover:bg-[#a1a2a3] text-black border-gray-300 p-3' />
-                    </div>
-                    <div className='mt-4 space-y-1'>
-                        <label htmlFor="email">E-posta Adresiniz*</label>
-                        <input type="email" id="email" className='w-full border-2 bg-metasoftco-bg/80 hover:bg-[#a1a2a3] text-black border-gray-300 p-3' />
-                    </div>
-                    <div className='mt-4 space-y-1'>
-                        <label htmlFor="message">Mesajınız*</label>
-                        <textarea id="message" className='w-full border-2 bg-metasoftco-bg/80 hover:bg-[#a1a2a3] text-black resize-none border-gray-300 p-3' />
-                    </div>
-                    <div className='w-full text-center'>
-                        <button className='rounded-full bg-metasoftco-red text-white mt-4 px-8 py-3 font-bold transition-all delay-100 hover:scale-110'>Gönder</button>
-                    </div>
-                </form>
+                <Form />
                 <div className='flex justify-between'>
                     <div></div>
                     <div className='grid grid-cols-4'>

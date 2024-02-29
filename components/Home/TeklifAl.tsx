@@ -7,6 +7,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
+import TeklifAlForm from "./TeklifAlForm"
 
 export function TeklifAl() {
     return (
@@ -18,18 +19,7 @@ export function TeklifAl() {
                 <DialogHeader>
                     <DialogTitle className="text-3xl text-[#333333]">Teklif Alın</DialogTitle>
                 </DialogHeader>
-                <div className="mt-8">
-                    <div>
-                        <label className="text-lg font-medium" htmlFor="email">E-posta Adresiniz:</label>
-                        <input type="email" id="email" className="w-full border-2 bg-metasoftco-bg/50 border-gray-300 p-3" />
-                    </div>
-
-                    <div className="mt-4">
-                        <label className="text-lg font-medium" htmlFor="message">Mesajınız:</label>
-                        <textarea id="message" className="w-full border-2 bg-metasoftco-bg/50 border-gray-300 p-3" />
-                    </div>
-                    <button className="rounded-full bg-black text-white mt-4 px-8 py-3 font-bold">Gönder</button>
-                </div>
+                <TeklifAlForm />
             </DialogContent>
         </Dialog>
     )
