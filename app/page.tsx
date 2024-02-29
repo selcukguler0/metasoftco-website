@@ -17,6 +17,43 @@ const yapayZekaAktiviteleri = [
   "/anasayfa-slides/yapay-zeka-aktiviteleri/3.jpg",
   "/anasayfa-slides/yapay-zeka-aktiviteleri/4.jpg",
 ]
+const yapayZekaAktiviteleriLinkler = [
+  {
+    title: "AI Photo Booth",
+    href: "/",
+  },
+  {
+    title: "AI Draw + Text",
+    href: "/",
+  },
+  {
+    title: "AI+AR Video",
+    href: "/",
+  },
+  {
+    title: "AI Greenbox",
+    href: "/",
+  },
+]
+
+const fotografAktiviteleriLinkler = [
+  {
+    title: "Photobooth",
+    href: "/",
+  },
+  {
+    title: "Digital Flipbook",
+    href: "/",
+  },
+  {
+    title: "Digital Mosaic",
+    href: "/",
+  },
+  {
+    title: "360 Selfie",
+    href: "/",
+  },
+]
 
 export default function Home() {
   return (
@@ -39,8 +76,8 @@ export default function Home() {
           </h2>
           <p className="text-lg">Yapay zeka destekli projeler, etkileşimli fotoğraf deneyimleri ve özelleştirilmiş interaktif makineler sunarak, her etkinliğinizi benzersiz ve hatırlanır kılacak yenilikçi çözümler üretiyoruz.</p>
         </div>
-        <Aktivite title="Yapay Zeka Projeleri" subtitle="Yapay zeka destekli uygulamalarımızla gerçekliğin sınırlarını zorlayın; etkinliklerinizi yenilikçi ve eğlenceli çözümlerimizle canlandırın." slides={yapayZekaAktiviteleri} links={["Fotoğraf Çek", "Fotoğraf Gönder", "Fotoğraf Baskı", "Fotoğraf Paylaş"]} />
-        <Aktivite title="Makine Aktiviteleri" subtitle="Etkinliklerinizde katılımcılarınızın eğlenceli ve unutulmaz anlar yaşamasını sağlayacak fotoğraf aktiviteleri." slides={fotografAktiviteleri} links={["Fotoğraf Çek", "Fotoğraf Gönder", "Fotoğraf Baskı", "Fotoğraf Paylaş"]} />
+        <Aktivite title="Yapay Zeka Projeleri" subtitle="Yapay zeka destekli uygulamalarımızla gerçekliğin sınırlarını zorlayın; etkinliklerinizi yenilikçi ve eğlenceli çözümlerimizle canlandırın." slides={yapayZekaAktiviteleri} links={yapayZekaAktiviteleriLinkler} />
+        <Aktivite title="Makine Aktiviteleri" subtitle="Etkinliklerinizde katılımcılarınızın eğlenceli ve unutulmaz anlar yaşamasını sağlayacak fotoğraf aktiviteleri." slides={fotografAktiviteleri} links={fotografAktiviteleriLinkler} />
       </main>
     </>
   );
