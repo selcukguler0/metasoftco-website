@@ -2,6 +2,23 @@ import Header from '@/components/Header'
 import React from 'react'
 import { IoIosMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "MetasoftCo - İletişim",
+    description: "İnteraktif Deneyim ve Yazılım Ajansı",
+    openGraph: {
+      type: "website",
+      locale: "tr_TR",
+      url: "https://metasoftco.com",
+      siteName: "MetasoftCo",
+      countryName: "Turkey",
+      title: "MetasoftCo - İletişim",
+      description: "İnteraktif Deneyim ve Yazılım Ajansı",
+      images: "https://metasoftco.com/whiteLogo.png",
+    },
+    metadataBase: new URL("https://metasoftco.com"),
+  };
 
 export default function Iletisim() {
     return (

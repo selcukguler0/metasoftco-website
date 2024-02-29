@@ -21,7 +21,7 @@ export default function Aktivite({ title, subtitle, slides, links }: AktivitePro
                 </div>
                 <EmblaCarousel slides={slides} />
             </div>
-            <div className="mx-auto mt-4 grid grid-cols-2 gap-y-2 md:grid-cols-4 md:max-w-[60%] place-items-center">
+            <div className="mx-auto mt-4 grid grid-cols-2 gap-2 md:grid-cols-4 md:max-w-[60%] place-items-center">
                 {links.map((link, index) => (
                     <Link key={index} className="rounded-full border-metasoftco-red border-2 max-w-40 text-center px-9 py-4 hover:bg-metasoftco-red hover:text-white transition-all delay-100" href="/">
                         {link}

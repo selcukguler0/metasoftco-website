@@ -1,5 +1,22 @@
 import Header from '@/components/Header'
+import { Metadata } from 'next';
 import React from 'react'
+
+export const metadata: Metadata = {
+    title: "MetasoftCo - Hakkımızda",
+    description: "İnteraktif Deneyim ve Yazılım Ajansı",
+    openGraph: {
+      type: "website",
+      locale: "tr_TR",
+      url: "https://metasoftco.com",
+      siteName: "MetasoftCo",
+      countryName: "Turkey",
+      title: "MetasoftCo - Hakkımızda",
+      description: "İnteraktif Deneyim ve Yazılım Ajansı",
+      images: "https://metasoftco.com/whiteLogo.png",
+    },
+    metadataBase: new URL("https://metasoftco.com"),
+  };
 
 export default function Hakkimizda() {
     return (

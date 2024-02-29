@@ -10,6 +10,17 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "MetasoftCo - İnteraktif Deneyim ve Yazılım Ajansı",
   description: "İnteraktif Deneyim ve Yazılım Ajansı",
+  openGraph: {
+    type: "website",
+    locale: "tr_TR",
+    url: "https://metasoftco.com",
+    siteName: "MetasoftCo",
+    countryName: "Turkey",
+    title: "MetasoftCo - İnteraktif Deneyim ve Yazılım Ajansı",
+    description: "İnteraktif Deneyim ve Yazılım Ajansı",
+    images: "https://metasoftco.com/whiteLogo.png",
+  },
+  metadataBase: new URL("https://metasoftco.com"),
 };
 
 export default function RootLayout({
