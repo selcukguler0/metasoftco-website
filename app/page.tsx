@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <>
       <Header page="Ana Sayfa" />
-      <main className="container mt-48">
+      <main className="container">
         <div className="mb-12 md:mb-0 md:min-h-[60vh]">
           <div className="mt-12 md:ml-56 max-w-[800px]">
             <h2 className="text-5xl md:text-7xl font-black">

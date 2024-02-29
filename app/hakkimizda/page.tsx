@@ -22,8 +22,8 @@ export default function Hakkimizda() {
     return (
         <>
             <Header page="Hakkımızda" />
-            <main className='mt-48'>
-                <div className='container max-w-[700px] mt-48 pb-12'>
+            <main className=''>
+                <div className='container max-w-[700px] pb-12'>
                     <h1 className='text-center text-5xl'>Hakkımızda</h1>
                     <p className='text-lg mt-10'>{"Yenilikçi fikirleri harika deneyimler yaratacak şekilde hayata geçirmeye tutkunuz."}</p>
                     <p className='text-lg mt-5'>{"Şirketimiz, dijital çözümlerle iş süreçlerinizde dönüşüm yaratıyor. Veri analizinden müşteri yönetimine, pazarlamadan otomasyona kadar geniş bir yelpazede hizmet sunarak işinizi dijitalleştiriyor ve verimliliğinizi artırıyoruz. Yenilikçi yaklaşımlarımız, yaratıcı çözümlerimiz ve ileri teknoloji kullanımımızla her projenin kalbine tasarımı yerleştiriyoruz."}</p>

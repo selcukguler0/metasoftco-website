@@ -32,7 +32,7 @@ export default function Header({ page }: HeaderProps) {
     }, [headerRef]);
 
     return (
-        <header ref={headerRef} className={classNames('bg-metasoftco-bg fixed w-full top-0 mb-48 z-50')}>
+        <header ref={headerRef} className={classNames('bg-metasoftco-bg sticky w-full top-0 z-50 mb-24')}>
             <div className='container flex justify-between items-center py-6 '>
                 <Link href='/'>
                     <Image className='w-40' src='/blackLogo.png' alt='Metasoft' width={160} height={160} />

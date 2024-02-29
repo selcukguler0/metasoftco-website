@@ -26,8 +26,8 @@ export default async function Iletisim() {
     return (
         <>
             <Header page="İletişim" />
-            <main className='mt-48'>
-                <div className='container max-w-[700px] mt-48'>
+            <main className=''>
+                <div className='container max-w-[700px]'>
                     <h1 className='text-center text-5xl'>Bize Ulaşın! <span className='handshake-emoji'>👋</span></h1>
                     <p className='text-lg mt-10'>{"Anlıyoruz, bazen toplantıdan önce sadece hızlı bir fiyata ihtiyacınız oluyor, bazen de A'dan Z'ye tam bir fiyat teklifi istiyorsunuz. Bize istediğiniz kadar az veya çok ayrıntı verin, biz de zaman ayırdığınıza değmesini sağlayalım."}</p>
                     <div className='flex flex-col md:flex-row justify-around mt-6 underline'>
