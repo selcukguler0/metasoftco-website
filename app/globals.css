@@ -25,6 +25,30 @@
   font-family: "NeueHaas-Medium";
 }
 
+@keyframes handshake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.handshake-emoji {
+  display: inline-block;
+  animation: handshake 2s infinite;
+}
+
+
 * {
   font-family: "NeueHaas-Medium", sans-serif;
 }

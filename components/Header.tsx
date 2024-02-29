@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React, { useEffect } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
+import MobileMenu from './MobileMenu'
 
 interface HeaderProps {
     page: string
@@ -33,7 +34,9 @@ export default function Header({ page }: HeaderProps) {
     return (
         <header ref={headerRef} className={classNames('bg-metasoftco-bg fixed w-full top-0 mb-48 z-50')}>
             <div className='container flex justify-between items-center py-6 '>
-                <Image className='w-40' src='/blackLogo.png' alt='Metasoft' width={160} height={160} />
+                <Link href='/'>
+                    <Image className='w-40' src='/blackLogo.png' alt='Metasoft' width={160} height={160} />
+                </Link>
                 <nav className='hidden md:block'>
                     <ul className='flex items-center space-x-10'>
                         <li className={classNames("text-sm", page == "Ana Sayfa" && "underline underline-offset-8")}>
@@ -41,19 +44,24 @@ export default function Header({ page }: HeaderProps) {
                                 Ana Sayfa
                             </Link>
                         </li>
-                        <li className={classNames("text-sm", page == "Hakkımızda" && "underline underline-offset-2")}>
-                            <Link href='/'>
+                        <li className={classNames("text-sm", page == "Hakkımızda" && "underline underline-offset-8")}>
+                            <Link href='/hakkimizda'>
                                 Hakkımızda
                             </Link>
                         </li>
-                        <li className={classNames("text-sm", page == "Projeler" && "underline underline-offset-2")}>
-                            <Link href='/'>
+                        <li className={classNames("text-sm", page == "Projeler" && "underline underline-offset-8")}>
+                            <Link href='/projeler'>
                                 Projeler
                             </Link>
                         </li>
-                        <li className='text-sm rounded-full bg-metasoftco-red hover:bg-metasoftco-red/90 hover:cursor-pointer px-8 py-3 text-white font-semibold'>İletişim</li>
+                        <li className={classNames("text-sm", page == "İletişim" && "underline underline-offset-4")}>
+                            <Link className='text-sm rounded-full bg-metasoftco-red hover:bg-metasoftco-red/90 hover:cursor-pointer px-8 py-3 text-white font-semibold' href='/iletisim'>
+                                İletişim
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
+                <MobileMenu />
             </div>
         </header>
     )
