@@ -12,7 +12,7 @@ export default function MobileMenu() {
           <ul className='flex flex-col gap-3 items-center text-2xl'>
             <li><Link href={"/"}>Ana Sayfa</Link></li>
             <li><Link href={"/hakkimizda"}>Hakkımızda</Link></li>
-            <li><Link href={"/"}>Projeler</Link></li>
+            <li><Link href={"/projeler"}>Projeler</Link></li>
             <li><Link href={"/iletisim"}>İletişim</Link></li>
           </ul>
           <DrawerFooter>
