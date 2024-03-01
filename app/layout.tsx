@@ -4,22 +4,15 @@ import "./globals.css";
 import "./embla.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { openGraph } from "@/data/MetaData";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "MetasoftCo - İnteraktif Deneyim ve Yazılım Ajansı",
   description: "İnteraktif Deneyim ve Yazılım Ajansı",
-  openGraph: {
-    type: "website",
-    locale: "tr_TR",
-    url: "https://metasoftco.com",
-    siteName: "MetasoftCo",
-    countryName: "Turkey",
-    title: "MetasoftCo - İnteraktif Deneyim ve Yazılım Ajansı",
-    description: "İnteraktif Deneyim ve Yazılım Ajansı",
-    images: "https://metasoftco.com/whiteLogo.png",
-  },
+  openGraph: openGraph,
+  keywords: "MetasoftCo, İnteraktif Deneyim ve Yazılım Ajansı",
   metadataBase: new URL("https://metasoftco.com"),
 };
 

@@ -7,7 +7,7 @@ export default function MobileMenu() {
   return (
     <div className='block md:hidden'>
       <Drawer >
-        <DrawerTrigger><RxHamburgerMenu /></DrawerTrigger>
+        <DrawerTrigger><RxHamburgerMenu size={24} /></DrawerTrigger>
         <DrawerContent>
           <ul className='flex flex-col gap-3 items-center text-2xl'>
             <li><Link href={"/"}>Ana Sayfa</Link></li>
